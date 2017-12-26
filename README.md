@@ -4,7 +4,7 @@ Docker environment to build Percona Server for MySQL
 Once built (see instructions in Dockerfile) you can start a container
 with your local clone of percona-server doing something like:
 
-	docker run --rm -i --name buildenvps -i -v /Users/fipar/src/percona-server:/src -v ~/tmp/build:/build fipar/percona-server-build-env:v1 /bin/bash
+    docker run --rm -i --name buildenvps -i -v /Users/fipar/src/percona-server:/src -v ~/tmp/build:/build fipar/percona-server-build-env:v1 /bin/bash	
 
 You can then attach to it
 
