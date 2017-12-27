@@ -19,6 +19,7 @@ RUN yum -y install \
   pam-devel \
   wget \
   xz-devel \
+  zlib-devel \
   perl-Env \
   time \
   numactl-devel \
