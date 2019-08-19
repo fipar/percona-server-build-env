@@ -1,14 +1,15 @@
 # To build use:
-# docker build -t fipar/percona-server-build-env:v1 .
-FROM centos:6
+# docker build -t fipar/percona-server-build-env:ps80 .
+FROM centos:7
 MAINTAINER Fernando Ipar <fipar at acm.org>
 
-LABEL description="A linux environment to build Percona Server for MySQL"
+LABEL description="A linux environment to build Percona Server for MySQL 8.0"
 
 RUN yum -y install \
   gcc \
   gcc-c++ \
   openssl \
+  openssl-devel \
   check \
   bison \
   boost-devel \
